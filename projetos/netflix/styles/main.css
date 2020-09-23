@@ -1,0 +1,94 @@
+:root {
+    --red: #e50914;
+    --black: #141414;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: var(--black);
+    font-family: 'Times New Roman', cursive;
+    letter-spacing: 1px;
+    color: #fff;
+
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--red);
+    font-family: 'Bebas Neue', cursive;
+    margin-left: 5px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    transition: color 0.2s;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+/* ==== Main Movie ===== */
+
+main .main-movie {
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),  url('../img/capa-house.jpg') center top;
+    height: 550px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main .main-movie .description {
+    margin-bottom: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+main .title {
+    margin-top: 15%;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+.button {
+    background: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 20px 35px;
+    letter-spacing: 2px;
+    margin-right: 15px;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: .3s ease all;
+    outline: none;
+}
+
+.button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.button i {
+    margin-right: 8px;
+}
