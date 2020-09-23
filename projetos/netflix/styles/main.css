@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 
@@ -21,15 +22,32 @@ body {
 header .container {
     display: flex;
     align-items: center;
+    justify-content: start;
+}
+
+header .container nav {
+    margin-left: 20px;
+}
+
+header .icons {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
+    height: 100%;
+    width: 90px;
+    margin-left: auto;
+    margin-right: 20px;
+    color: #fff;
 }
 
 header .logo {
     color: var(--red);
     font-family: 'Bebas Neue', cursive;
-    margin-left: 5px;
+    margin-left: 20px;
     font-size: 40px;
     letter-spacing: 5px;
+    margin-top: 7px;
+    
 }
 
 header nav a {
@@ -45,10 +63,10 @@ header nav a:hover {
 
 /* ==== Main Movie ===== */
 
-main .main-movie {
+div.main-movie {
     font-size: 16px;
-    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),  url('../img/capa-house.jpg') center top;
-    height: 550px;
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%),  url('../img/capa-house.jpg') no-repeat center top;
+    height: 650px;
     background-size: cover;
 
     display: flex;
@@ -64,9 +82,17 @@ main .main-movie .description {
 }
 
 main .title {
-    margin-top: 15%;
     font-size: 60px;
     text-transform: uppercase;
+}
+
+main .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 50%;
 }
 
 .button {
@@ -91,4 +117,22 @@ main .title {
 
 .button i {
     margin-right: 8px;
+}
+
+
+
+.main-movie .container {
+    width: 70%;
+}
+
+/*  Carousel  */
+
+.carousel-movies {
+    margin-top: 10px;
+}
+
+.box-movie {
+    height: 100%;
+    width: 100%;
+    display: block;
 }
